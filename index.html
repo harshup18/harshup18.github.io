@@ -676,7 +676,7 @@ footer {
             </div>
             <div class="col-md-8">
                 <!--Contact form-->
-                <form class="form-horizontal" id="contact_form" _lpchecked="1">
+                <form class="form-horizontal" id="contact_form" method = "POST" action= ""https://script.google.com/macros/s/AKfycbwbTzvavq9B2kafxA-O471bebMcIqXmKQG-98MA/exec" _lpchecked="1">
                     <fieldset>
                         <!-- Text input-->
                         <div class="form-group">
@@ -696,7 +696,7 @@ footer {
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="msg">Message</label>
                             <div class="col-md-8">
-                                <textarea class="form-control" id="msg" name="msg" cols="6" rows="6"></textarea>
+                                <textarea class="form-control" id="message" name="message" cols="6" rows="6"></textarea>
                             </div>
                         </div>
                         <!-- Button -->
@@ -736,7 +736,7 @@ function scrollFunction() {
 
 jQuery(function($)  
 {
-    $("#contact_form").submit(function()
+<!--     $("#contact_form").submit(function()
     {
         var email = $("#email").val(); // get email field value
         var name = $("#name").val(); // get name field value
@@ -775,7 +775,7 @@ jQuery(function($)
         });
         return false; // prevent page refresh
     });
-});
+}); -->
 
 $('.nav a').on('click', function(){
     $('.btn-navbar').click(); //bootstrap 2.x
